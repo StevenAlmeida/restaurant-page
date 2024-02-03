@@ -12,10 +12,10 @@ function navButtonClick(id) {
             contentDiv.replaceChildren(loadHomePage());
             break;
         case "menu":
-            console.log("WIP");
+            contentDiv.replaceChildren(loadMenuPage());
             break;
         case "contact":
-            console.log("WIP");
+            contentDiv.replaceChildren(loadContactPage());
             break;
     }
 }

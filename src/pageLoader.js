@@ -3,9 +3,9 @@ const hoursData = {
     "Tuseday" : "8am - 10pm",
     "Wendesday" : "8am - 10pm",
     "Thursday" : "8am - 10pm",
-    "Friday" : "10am - 12pm",
-    "Saturday" : "10am - 12pm",
-    "Sunday" : "10am - 12pm"
+    "Friday" : "10am - 12am",
+    "Saturday" : "10am - 12am",
+    "Sunday" : "10am - 12am"
 }
 
 function loadHomePage() {
@@ -60,7 +60,7 @@ function loadHomePage() {
     locationP.textContent = "Location: ";
     const locationSpan = document.createElement("span");
     locationSpan.classList.add("highlight");
-    locationSpan.textContent = "We at the Hidden Leaf Village bruh";
+    locationSpan.textContent = "Hidden Leaf Village";
     locationP.appendChild(locationSpan);
     location.appendChild(locationP);
 
@@ -68,11 +68,27 @@ function loadHomePage() {
 }
 
 function loadMenuPage() {
-    alert("Menu");
+    const container = document.createElement("div");
+    container.classList.add("container", "flex");
+
+    const p = document.createElement("p");
+    p.classList.add("big");
+    p.textContent = "We only have ramen bro";
+    container.appendChild(p);
+
+    return container;
 }
 
 function loadContactPage() {
-    alert("Contact");
+    const container = document.createElement("div");
+    container.classList.add("container", "flex");
+
+    const p = document.createElement("p");
+    p.classList.add("big");
+    p.textContent = "We don't have phones just come to the Hidden Leaf Village";
+    container.appendChild(p);
+
+    return container;
 }
 
 export { loadHomePage, loadMenuPage, loadContactPage };
